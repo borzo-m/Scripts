@@ -30,6 +30,7 @@ minutes_galloway_walk=int(input("set minutes you will walk "))
 sum_of_intervals=minutes_galloway_walk+minutes_galloway_run
 
 #walk pace
+print ("\n"+"Now tell us what is your walk pace?")
 walk_pace_minutes=int(input("set minutes "))
 walk_pace_seconds=int(input("seconds "))
 pace_walk=pace(walk_pace_minutes,walk_pace_seconds)
@@ -39,4 +40,6 @@ galloway_pace=galloway_pace(minutes_galloway_run,minutes_galloway_walk,pace_run,
 
 #calculate time
 time_galloway=run_time(distance,galloway_pace)
-print("By Galloway your time is "+str(time_galloway))
+print("So your normal time is: "+time_normal+" And By Galloway your time is "+str(time_galloway))
+time_difference=compare(time_normal,time_galloway)
+print("So the diffrence is: ",time_difference," You run slower but healthier :)")
