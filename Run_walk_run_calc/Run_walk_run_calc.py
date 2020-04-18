@@ -1,6 +1,6 @@
 from time import strftime
 from time import gmtime
-from functions import pace, run_time,galloway_pace,compare
+from functions import *
 
 print("welcome in our calculator, it's good choice to run galloway")
 print ("now we can calculate, how much long you will run, if you run galloway."+"\n"+"\n"+"Set your normal pace first")
